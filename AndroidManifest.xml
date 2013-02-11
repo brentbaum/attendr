@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.attendr.app"
+    android:versionCode="1"
+    android:versionName=".5" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        <activity
+            android:name="com.attendr.app.SplashActivity"
+    		android:theme="@style/Theme.Splash"
+    		android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.attendr.app.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.attendr.app.RegisterActivity"
+            android:parentActivityName="com.attendr.app.SplashActivity" 
+            android:theme="@style/RegisterTheme"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.attendr.app.SplashActivity" />
+        </activity>
+        <activity
+            android:name="com.attendr.app.EventListActivity"
+            android:parentActivityName="com.attendr.app.RegisterActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.attendr.app.SplashActivity" />
+        </activity>
+        <activity
+            android:name="com.attendr.app.EventActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+    	</activity>
+        <activity
+            android:name="com.attendr.app.EventPostViewActivity"
+            android:parentActivityName="com.attendr.app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.attendr.app.MainActivity" />
+        </activity>
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>
+        <activity android:name="com.facebook.LoginActivity"></activity>
+    </application>
+
+</manifest>

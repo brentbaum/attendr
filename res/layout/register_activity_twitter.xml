@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    style="@style/RegisterTheme" >
+    <TextView
+        android:id="@+id/congratulations_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:text="@string/congratulations_label"
+        android:textColor="#ff5500"
+        android:textSize="40sp" />
+    
+    <TextView
+        android:id="@+id/connect_another_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/connect_twitter_label"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/twitter_connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/twitter_button_label"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="#4099ff"
+        android:onClick="onTwitterClick"></Button>
+	    <Button
+        android:id="@+id/finish_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/finish_label"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="#555555"
+        android:onClick="onFinishClick"></Button>
+</LinearLayout>

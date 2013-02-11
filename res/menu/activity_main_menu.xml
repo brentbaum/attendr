@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_overflow"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="ifRoom">
+	    <menu>
+	        <item
+		        android:id="@+id/menu_refresh"
+		        android:orderInCategory="100"
+		        android:showAsAction="ifRoom"
+		        android:title="@string/refresh_label"
+		        android:onClick="onRefreshClick"/>
+			<item
+			  	android:id="@+id/menu_leave"
+			    android:title="@string/leave_event_label"
+			    android:orderInCategory="200"
+			    android:showAsAction="ifRoom"
+			    android:onClick="onLeaveEventClick" />
+			<item android:id="@+id/menu_settings"
+			   	android:title="@string/account_settings_label"
+		        android:orderInCategory="200"
+			    android:showAsAction="ifRoom" />
+		</menu>
+	</item>
+	<item
+        android:id="@+id/menu_compose"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/compose_label"
+        android:icon="@drawable/content_edit"
+        android:onClick="composeDialog"/>
+</menu>

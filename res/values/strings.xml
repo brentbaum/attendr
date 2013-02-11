@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Attendr</string>
+    <string name="menu_settings">Settings</string>
+    <string name="edit_message">Enter a message.</string>
+    <string name="button_send">Send</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="post_hint">Post something</string>
+    <string name="share_label">Share</string>
+    <string name="compose_title">Share what you\'re thinking!</string>
+    <string name="like_label">Like</string>
+    <string name="reply_label">Reply</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="attendr_label">Attendr</string>
+    <string name="connect_label">Connect with social networks</string>
+    <string name="facebook_button_label">Login w/ Facebook</string>
+    <string name="twitter_button_label">Connect w/ Twitter</string>
+    <string name="register_normal_label">Register</string>
+    <string name="skip_register_label">connect later</string>
+    <string name="finish_label">Finish</string>
+    <string name="congratulations_label">Congratulations!</string>
+    <string name="welcome_message_label">Congratulations, you\'re logged in!</string>
+    <string name="see_events_label">See events near you</string>
+    <string name="event_name">CES 2013</string>
+    <string name="connect_facebook_label">Twitter account linked! Connect another service?</string>
+    <string name="connect_twitter_label">Facebook account linked! Connect another service? </string>
+    <string name="compose_label">Compose new message</string>
+    <string name="frowny_face">:(</string>
+    <string name="no_events_message_1">There is nothing going on around you. You are alone.</string>
+    <string name="whats_up_label">Here\'s what\'s going on around you.</string>
+    <string name="leave_event_label">Leave event</string>
+    <string name="account_settings_label">Account settings</string>
+    <string name="give_feedback_label">Give us feedback</string>
+    <string name="register_name_hint">Joe Schmoe</string>
+    <string name="register_email_hint">joe@schmoe.go</string>
+    <string name="register_attendr_label">To get started, log in with Facebook or Twitter.</string>
+    <string name="app_id">281458455315396</string>
+    <string name="refresh_label">Refresh</string>
+    <string name="create_event_label">Create Event</string>
+</resources>
