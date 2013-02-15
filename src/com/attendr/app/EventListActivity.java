@@ -217,7 +217,7 @@ public class EventListActivity extends SherlockFragmentActivity implements TabHo
 	public void createEvent() {
 		if(lat != -1000) {
 			ServerAPI server = ServerAPI.getInstance(this.getSharedPreferences(Utils.PREFS_NAME, 0).getString("user_id", "no_id"), this);
-			server.createEvent(lat, lon,  "Developer Week Hackathon!", "We're hacking at Developer week.", new Callbacks.CreateEventCallback());
+			server.createEvent(lat, lon,  "Startup Weekend NEXT", "Learning to make a company with the help of some awesome mentors.", new Callbacks.CreateEventCallback());
 			Log.v("Refreshing","Refreshing");
 			placeListFragment.refreshPlaceList(lat, lon);
 			eventListFragment.refreshEventList(lat, lon);

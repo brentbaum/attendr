@@ -44,6 +44,10 @@ public class UserData {
 			last = lastName;
 		}
 		public String getName() {
+			if(first==null)
+				return "first is null";
+			else if(last==null)
+				return "last is null";
 			return first + last;
 		}
 	}

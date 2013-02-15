@@ -2,19 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#333333"
     android:orientation="vertical"
-    android:background="#444444" >
+    android:gravity="center"
+    android:layout_gravity="center"
+    style="@style/RegisterTheme" >
     <TextView
         android:id="@+id/attendr_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
         android:text="@string/attendr_label"
         android:textColor="#ff5500"
         android:textSize="50sp" />
     <TextView
-        android:id="@+id/register_attendr_subtext"
+        android:id="@+id/register_attendr_subtext_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

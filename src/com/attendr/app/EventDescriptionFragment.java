@@ -68,13 +68,15 @@ public class EventDescriptionFragment extends SherlockFragment {
 			eventPicture = (ImageView)view.findViewById(R.id.event_picture);
 
 			if (eventName != null) {
-				Log.v("Name:",event.getName());
 				eventName.setText(event.getName());
 			}
 
 			if (description != null) {
-				Log.v("Description:",event.getDescription());
-				description.setText(event.getDescription());
+				String des = "\tThousands of computer geeks have come from all around the world to participate in the one hackathon to rule them all: Dev Week 2013 Hackathon."
+						+" \n\nWith copious amounts of beer on hand, our adventurous programmer will embark on a journey that could truly only be likened in terms of epic "
+						+"proportions to the Olympic trials. \n\nThis is it folks, this is it.";
+				description.setText(des);
+				//description.setText(event.getDescription());
 			}
 
 			if (numberOfAttendees != null) {
@@ -86,8 +88,8 @@ public class EventDescriptionFragment extends SherlockFragment {
 			}
 			
 			if (eventPicture != null) {
-				eventPicture.setBackgroundColor(Color.LTGRAY);
-				imageLoader.displayImage(event.image, eventPicture, this.options, new SimpleImageLoadingListener() {
+				//eventPicture.setBackgroundColor(Color.LTGRAY);
+				imageLoader.displayImage("http://startupweekend.org/wp-content/blogs.dir/1/files/2012/10/swnext-logo-300x256.png", eventPicture, this.options, new SimpleImageLoadingListener() {
 					@Override
 					public void onLoadingFailed(FailReason failReason) {
                         // TODO Auto-generated method stub

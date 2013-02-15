@@ -39,4 +39,5 @@
     <string name="app_id">281458455315396</string>
     <string name="refresh_label">Refresh</string>
     <string name="create_event_label">Create Event</string>
+    <string name="register_attendr_subtext_email">Give us your name and email and you\'ll be on your way to event awesomeness.</string>
 </resources>

@@ -70,7 +70,7 @@ public class PostDataAdapter extends ArrayAdapter<PostData> {
 		}
 
 		PostData post = posts.get(posts.size() - position - 1);
-		if (post != null) {
+		if (post != null && post.getUser()!=null) {
 			username = (TextView) v.findViewById(R.id.username);
 			content = (TextView) v.findViewById(R.id.content);
 			numberOfComments = (TextView) v
@@ -80,7 +80,9 @@ public class PostDataAdapter extends ArrayAdapter<PostData> {
 			profilePicture = (ImageView) v
 					.findViewById(R.id.selection_profile_pic);
 			numberOfLikes = (TextView)v.findViewById(R.id.number_of_likes);
-
+			
+			post.getUser().getName();
+			
 			if (username != null) {
 				username.setText(post.getUser().getName());
 			}
@@ -111,7 +113,6 @@ public class PostDataAdapter extends ArrayAdapter<PostData> {
 						new SimpleImageLoadingListener() {
 							@Override
 							public void onLoadingFailed(FailReason failReason) {
-								Log.v("Loading", failReason.toString());
 								super.onLoadingFailed(failReason);
 							}
 

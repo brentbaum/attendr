@@ -74,12 +74,10 @@ public class EventDataAdapter extends ArrayAdapter<EventData> {
 			eventPicture = (ImageView)v.findViewById(R.id.event_picture);
 
 			if (eventName != null) {
-				Log.v("Name:",event.getName());
 				eventName.setText(event.getName());
 			}
 
 			if (description != null) {
-				Log.v("Description:",event.getDescription());
 				description.setText(event.getDescription());
 			}
 
@@ -92,8 +90,8 @@ public class EventDataAdapter extends ArrayAdapter<EventData> {
 			}
 			
 			if (eventPicture != null) {
-				//eventPicture.setBackgroundColor(Color.LTGRAY);
-				imageLoader.displayImage(event.image, eventPicture, this.options, new SimpleImageLoadingListener() {
+				
+				imageLoader.displayImage("http://startupweekend.org/wp-content/blogs.dir/1/files/2012/10/swnext-logo-300x256.png", eventPicture, this.options, new SimpleImageLoadingListener() {
 					@Override
 					public void onLoadingFailed(FailReason failReason) {
                         // TODO Auto-generated method stub
@@ -104,10 +102,8 @@ public class EventDataAdapter extends ArrayAdapter<EventData> {
                     @Override
                 public void onLoadingComplete(Bitmap loadedImage) {
                     eventPicture.setImageBitmap(loadedImage);
-                    Log.v("ImageLoader","Loading complete!");
                 }
 				});
-				Log.v("ImageLoader","Image downloading!");
 			}
 			v.setOnClickListener(new OnClickListener() {
 				public void onClick(View v) {
